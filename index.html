@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Моделирование</title>
+    <link rel="stylesheet" href="dvdscreensaver.css">
+    <script type="text/javascript" src="dvdscreensaver.js"></script>
+  </head>
+  <body>
+      <h1>Моделирование упругого столкновения двух тел</h1> <br/>
+
+      <div id="body1">
+      <div id="form">
+        <form id="collisionForm">
+          <h3>Оболочка</h3>
+          
+          Ширина: <br/>
+
+          <label for="border_x">w</label> = <input type="number" step="0.001" value="50" id="border_x" required> м <br/>
+
+          Высота: <br/>
+
+          <label for="border_y">h</label> = <input type="number" step="0.001" value="50" id="border_y" required> м <br/>
+          
+          <h3>Тело 1</h3>
+
+          Масса тела: <br/>
+
+          <label for="mass1">m<sub>1</sub></label> = <input type="number" step="0.001" value="1" id="mass1" required> кг <br/>
+          
+          Скорость тела: <br/>
+
+          <label for="velocity1x">v<sub>1x</sub></label> = <input type="number" step="0.001" value="100" id="velocity1x" required> м/с <br/>
+          
+          <label for="velocity1y">v<sub>1y</sub></label> = <input type="number" step="0.001" value="100" id="velocity1y" required> м/с <br/>
+          
+          Положение тела: <br/>
+          
+          <label for="position1x">x<sub>1</sub></label> = <input type="number" step="0.001" value="0" id="position1x" required> м <br/>
+          
+          <label for="position1y">y<sub>1</sub></label> = <input type="number" step="0.001" value="0" id="position1y" required> м <br/>
+          
+          Размеры тела: <br/>
+
+          <label for="width1">w<sub>1</sub></label> = <input type="number" step="0.001" value="10" id="width1" required> м <br/>
+          
+          <label for="height1">h<sub>1</sub></label> = <input type="number" step="0.001" value="10" id="height1" required> м <br/>
+
+          <h3>Тело 2</h3>
+
+          Масса тела: <br/>
+
+          <label for="mass2">m<sub>2</sub></label> = <input type="number" step="0.001" value="10" id="mass2" required> кг <br/>
+          
+          Скорость тела: <br/>
+          
+          <label for="velocity2x">v<sub>2x</sub></label> = <input type="number" step="0.001" value="-100" id="velocity2x" required> м/с <br/>
+          
+          <label for="velocity2y">v<sub>2y</sub></label> = <input type="number" step="0.001" value="-100" id="velocity2y" required> м/с <br/>
+          
+          Положение тела: <br/>
+          
+          <label for="position2x">x<sub>2</sub></label> = <input type="number" step="0.001" value="25" id="position2x" required> м <br/>
+          
+          <label for="position2y">y<sub>2</sub></label> = <input type="number" step="0.001" value="25" id="position2y" required> м <br/>
+          
+          Размеры тела: <br/>
+
+          <label for="width2">w<sub>2</sub></label> = <input type="number" step="0.001" value="10" id="width2" required> м <br/>
+          
+          <label for="height2">h<sub>2</sub></label> = <input type="number" step="0.001" value="10" id="height2" required> м <br/>
+          
+          <br/><button type="submit">Перезапустить симуляцию</button>
+        </form>
+
+        <br/><input type="checkbox" id="stop_simulation"> Остановить симуляцию?
+            
+    </div>
+    <div id="border">
+        <div id="object1"> </div> 
+        
+        <div id="object2"> </div>
+        
+        <!-- <div id="object3"> </div> -->
+    </div>
+    </div>
+    <br/>
+
+    Исходный код: <a href="https://github.com/komashko-star/physics_lecture_task_4">https://github.com/komashko-star/physics_lecture_task_4</a>
+  </body>
+</html>
